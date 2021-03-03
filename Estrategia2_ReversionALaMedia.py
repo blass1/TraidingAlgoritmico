@@ -28,7 +28,7 @@ import matplotlib.pyplot as plt
 start = dt.datetime(2000,2,28)
 end = dt.datetime(2021,2,28)
 # Oro en acciones de yahoo
-data = DataReader('GDX', 'yahoo', start, end)
+data = DataReader('MELI', 'yahoo', start, end)
 data['price'] = data['Adj Close']
 
 # Media movil en dias

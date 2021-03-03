@@ -24,11 +24,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #Desde / hasta (aaaa/mm/dd)
-start = dt.datetime(2018,10,1)
-end = dt.datetime(2020,10,1)
+start = dt.datetime(2020,3,3)
+end = dt.datetime(2021,3,3)
 # Par Dolar estadounidense frente al franco suizo 
 # El identificador FOREX de yahoo es : USDCHF=X
-df = DataReader('USDCHF=X', 'yahoo', start, end)
+df = DataReader('MELI', 'yahoo', start, end)
 
 # Este parametro del sistema despues cuando se haga la "Evaluacion del sistema"
 # pondremos los valores optimos de este parametro
